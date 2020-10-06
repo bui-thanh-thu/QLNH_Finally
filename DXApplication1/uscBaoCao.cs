@@ -25,7 +25,7 @@ namespace DXApplication1
         {
             var tuNgay = (DateTime)itemTuNgay.EditValue;
             var denNgay = (DateTime)itemDenNgay.EditValue;
-            gcBaoCao.DataSource = db.BaoCao_Select(tuNgay, denNgay);
+            //gcBaoCao.DataSource = db.BaoCao_Select(tuNgay, denNgay);
             chartControl1.DataSource = db.BaoCaoChartBanChay_Select(tuNgay, denNgay);
         }
 
@@ -59,12 +59,12 @@ namespace DXApplication1
             //e.Item["Name"].Appearance.Normal.FontStyleDelta = FontStyle.Bold;
         }
 
-        private void uscNhapKho_Load(object sender, EventArgs e)
-        {
-            lookLoai.DataSource = db.LOAIs;
-            lookUsser.DataSource = db.TaiKhoans;
-            LoadData();
-        }
+        //private void uscNhapKho_Load(object sender, EventArgs e)
+        //{
+        //    lookLoai.DataSource = db.LOAIs;
+        //    lookUsser.DataSource = db.TaiKhoans;
+        //    LoadData();
+        //}
 
         private void gridView1_CustomColumnDisplayText(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e)
         {

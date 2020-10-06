@@ -44,7 +44,6 @@
             this.navOrder = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBaoCao = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBieuDo = new DevExpress.XtraNavBar.NavBarGroup();
-            this.navLoiNhuan = new DevExpress.XtraNavBar.NavBarGroup();
             this.navMenu = new DevExpress.XtraNavBar.NavBarGroup();
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.pageOrder = new DevExpress.XtraBars.Navigation.NavigationPage();
@@ -63,6 +62,7 @@
             // 
             // ribbonControl
             // 
+            this.ribbonControl.BackColor = System.Drawing.Color.White;
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
@@ -79,10 +79,11 @@
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage});
-            this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
+            this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2007;
             this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl.Size = new System.Drawing.Size(790, 158);
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
+            this.ribbonControl.Click += new System.EventHandler(this.ribbonControl_Click);
             // 
             // skinRibbonGalleryBarItem
             // 
@@ -161,7 +162,6 @@
             this.navOrder,
             this.navBaoCao,
             this.navBieuDo,
-            this.navLoiNhuan,
             this.navMenu});
             this.navBarControl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.navBarControl.Location = new System.Drawing.Point(0, 158);
@@ -170,6 +170,7 @@
             this.navBarControl.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
             this.navBarControl.Size = new System.Drawing.Size(228, 512);
             this.navBarControl.TabIndex = 0;
+            this.navBarControl.View = new DevExpress.XtraNavBar.ViewInfo.StandardSkinNavigationPaneViewInfoRegistrator("VS2010");
             this.navBarControl.ActiveGroupChanged += new DevExpress.XtraNavBar.NavBarGroupEventHandler(this.navBarControl_ActiveGroupChanged);
             // 
             // navHoaDon
@@ -195,15 +196,9 @@
             // 
             // navBieuDo
             // 
-            this.navBieuDo.Caption = "BIỂU ĐỒ DOANH THU";
+            this.navBieuDo.Caption = " DOANH THU";
             this.navBieuDo.ImageOptions.LargeImage = global::DXApplication1.Properties.Resources.Combo_Chart_48px;
             this.navBieuDo.Name = "navBieuDo";
-            // 
-            // navLoiNhuan
-            // 
-            this.navLoiNhuan.Caption = "BIỂU ĐỒ LỢI NHUẬN";
-            this.navLoiNhuan.ImageOptions.SmallImage = global::DXApplication1.Properties.Resources.icons8_Joomla_48px;
-            this.navLoiNhuan.Name = "navLoiNhuan";
             // 
             // navMenu
             // 
@@ -324,7 +319,6 @@
         private DevExpress.XtraBars.Navigation.NavigationPage pageNhapKho;
         private DevExpress.XtraNavBar.NavBarGroup navBieuDo;
         private DevExpress.XtraBars.Navigation.NavigationPage pageNhanVien;
-        private DevExpress.XtraNavBar.NavBarGroup navLoiNhuan;
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage1;
     }
 }

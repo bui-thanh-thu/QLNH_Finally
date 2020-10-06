@@ -24,9 +24,9 @@ namespace DXApplication1
         void LoadData()
         {
             grBCNgay.Controls.Add(new uscBaoCaoChartNgay() { Dock = DockStyle.Fill });
-            grBCThang.Controls.Add(new uscBaoCaoChartThang() { Dock = DockStyle.Fill });
-            grBCQuy.Controls.Add(new uscBaoCaoChartQuy() { Dock = DockStyle.Fill });
-            grBCNam.Controls.Add(new uscBaoCaoChartNam() { Dock = DockStyle.Fill });
+            //grBCThang.Controls.Add(new uscBaoCaoChartThang() { Dock = DockStyle.Fill });
+            //grBCQuy.Controls.Add(new uscBaoCaoChartQuy() { Dock = DockStyle.Fill });
+            //grBCNam.Controls.Add(new uscBaoCaoChartNam() { Dock = DockStyle.Fill });
         }
 
         private void itemRefesh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

@@ -41,13 +41,12 @@
             this.txtNhapLaiMKM = new DevExpress.XtraEditors.TextEdit();
             this.txtMatKhauMoi = new DevExpress.XtraEditors.TextEdit();
             this.txtMatKhau = new DevExpress.XtraEditors.TextEdit();
-            this.txtTaiKhoan = new DevExpress.XtraEditors.TextEdit();
+            this.txtTaiKhoan = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tabFormControl1)).BeginInit();
             this.tabFormContentContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtNhapLaiMKM.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhauMoi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTaiKhoan.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonPage2
@@ -63,7 +62,7 @@
             this.tabFormControl1.SelectedPage = this.tabFormPage1;
             this.tabFormControl1.ShowAddPageButton = false;
             this.tabFormControl1.ShowTabCloseButtons = false;
-            this.tabFormControl1.Size = new System.Drawing.Size(321, 50);
+            this.tabFormControl1.Size = new System.Drawing.Size(348, 71);
             this.tabFormControl1.TabForm = this;
             this.tabFormControl1.TabIndex = 0;
             this.tabFormControl1.TabStop = false;
@@ -77,6 +76,7 @@
             // 
             // tabFormContentContainer1
             // 
+            this.tabFormContentContainer1.Controls.Add(this.txtTaiKhoan);
             this.tabFormContentContainer1.Controls.Add(this.btnThoat);
             this.tabFormContentContainer1.Controls.Add(this.btnDangNhap);
             this.tabFormContentContainer1.Controls.Add(this.labelControl4);
@@ -86,11 +86,10 @@
             this.tabFormContentContainer1.Controls.Add(this.txtNhapLaiMKM);
             this.tabFormContentContainer1.Controls.Add(this.txtMatKhauMoi);
             this.tabFormContentContainer1.Controls.Add(this.txtMatKhau);
-            this.tabFormContentContainer1.Controls.Add(this.txtTaiKhoan);
             this.tabFormContentContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabFormContentContainer1.Location = new System.Drawing.Point(0, 50);
+            this.tabFormContentContainer1.Location = new System.Drawing.Point(0, 71);
             this.tabFormContentContainer1.Name = "tabFormContentContainer1";
-            this.tabFormContentContainer1.Size = new System.Drawing.Size(321, 155);
+            this.tabFormContentContainer1.Size = new System.Drawing.Size(348, 158);
             this.tabFormContentContainer1.TabIndex = 1;
             // 
             // btnThoat
@@ -175,10 +174,10 @@
             // 
             // txtTaiKhoan
             // 
-            this.txtTaiKhoan.Location = new System.Drawing.Point(109, 15);
+            this.txtTaiKhoan.Location = new System.Drawing.Point(109, 14);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(162, 20);
-            this.txtTaiKhoan.TabIndex = 0;
+            this.txtTaiKhoan.Size = new System.Drawing.Size(162, 21);
+            this.txtTaiKhoan.TabIndex = 6;
             // 
             // frmDoiMatKhau
             // 
@@ -186,13 +185,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnThoat;
-            this.ClientSize = new System.Drawing.Size(321, 205);
+            this.ClientSize = new System.Drawing.Size(348, 229);
             this.Controls.Add(this.tabFormContentContainer1);
             this.Controls.Add(this.tabFormControl1);
-            this.MaximumSize = new System.Drawing.Size(331, 210);
-            this.MinimumSize = new System.Drawing.Size(331, 210);
+            this.IconOptions.ShowIcon = false;
+            this.MaximumSize = new System.Drawing.Size(350, 230);
+            this.MinimumSize = new System.Drawing.Size(323, 206);
             this.Name = "frmDoiMatKhau";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TabFormControl = this.tabFormControl1;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLogin_FormClosing);
@@ -203,7 +202,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtNhapLaiMKM.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhauMoi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTaiKhoan.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -218,10 +216,10 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.TextEdit txtMatKhau;
-        private DevExpress.XtraEditors.TextEdit txtTaiKhoan;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.TextEdit txtNhapLaiMKM;
         private DevExpress.XtraEditors.TextEdit txtMatKhauMoi;
+        private System.Windows.Forms.TextBox txtTaiKhoan;
     }
 }

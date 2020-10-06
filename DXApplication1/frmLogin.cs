@@ -14,6 +14,7 @@ namespace DXApplication1
 {
     public partial class frmLogin : DevExpress.XtraBars.TabForm
     {
+        public delegate void delPassData(TextBox text);
         public frmLogin()
         {
             InitializeComponent();
@@ -60,34 +61,23 @@ namespace DXApplication1
                 var objDN = db.TaiKhoans.SingleOrDefault(p => p.UserName.ToLower() == txtTaiKhoan.Text.ToLower() && p.Pass == txtMatKhau.Text.ToLower());
                 if (objDN != null)
                 {
-                    if (ckSave.Checked)
-                    {
-                        Properties.Settings.Default.Password = txtMatKhau.Text;
-                        Properties.Settings.Default.UserName = txtTaiKhoan.Text;
-                        Properties.Settings.Default.IsSave = true;
-                    }
-                    else
-                    {
-                        Properties.Settings.Default.IsSave = false;
-                    }
-                    //if (ckKhoiDong.IsChecked.GetValueOrDefault())
+                    //if (ckSave.Checked)
                     //{
-                    //    RegistryKey rkApp = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
-                    //    rkApp.SetValue("WpfApplication1.exe", Assembly.GetEntryAssembly().Location);
+                    //    Properties.Settings.Default.Password = txtMatKhau.Text;
+                    //    Properties.Settings.Default.UserName = txtTaiKhoan.Text;
+                    //    Properties.Settings.Default.IsSave = true;
                     //}
                     //else
                     //{
-                    //    RegistryKey rkApp = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
-                    //    rkApp.SetValue("WpfApplication1.exe", "");
+                    //    Properties.Settings.Default.IsSave = false;
                     //}
-                    //if (cbmLanguage.SelectedIndex == 0)
-                    //    Properties.Settings.Default.IsTranslate = false;
-                    //else
-                    //    Properties.Settings.Default.IsTranslate = true;
-                    //Properties.Settings.Default.IsDN = true;
+                    
                     Properties.Settings.Default.MaNV = objDN.ID;
                     Properties.Settings.Default.Save();
                     IsDN = true;
+                    frmDoiMatKhau form = new frmDoiMatKhau();
+                    delPassData del = new delPassData(form.funData);
+                    del(this.txtTaiKhoan);
                     this.Close();
                 }
                 else
@@ -102,21 +92,6 @@ namespace DXApplication1
             }
         }
 
-        private void link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            try
-            {
-                var result = XtraInputBox.Show("Thiết lập server", "Nhập chuỗi kết nối", Properties.Settings.Default.QuanLyQuanCafeConnectionString);
-                if (string.IsNullOrEmpty(result)) return;
-                Properties.Settings.Default.QuanLyQuanCafeConnectionString = result;
-                Properties.Settings.Default.Save();
-                XtraMessageBox.Show("Đã thiết lập server thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch 
-            {
-
-                
-            }
-        }
+        
     }
 }

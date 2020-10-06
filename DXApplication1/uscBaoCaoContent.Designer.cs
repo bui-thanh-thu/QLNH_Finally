@@ -39,13 +39,6 @@
             this.repositoryItemDateEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
             this.itemDenNgay = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemDateEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
-            this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.splitContainerControl2 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.grBCNgay = new DevExpress.XtraEditors.GroupControl();
-            this.grBCQuy = new DevExpress.XtraEditors.GroupControl();
-            this.splitContainerControl3 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.grBCThang = new DevExpress.XtraEditors.GroupControl();
-            this.grBCNam = new DevExpress.XtraEditors.GroupControl();
             this.barManager2 = new DevExpress.XtraBars.BarManager(this.components);
             this.barDockControl1 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl2 = new DevExpress.XtraBars.BarDockControl();
@@ -56,23 +49,21 @@
             this.barDockControl6 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl7 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl8 = new DevExpress.XtraBars.BarDockControl();
+            this.splitContainerControl2 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.grBCNgay = new DevExpress.XtraEditors.GroupControl();
+            this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit2.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
-            this.splitContainerControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).BeginInit();
             this.splitContainerControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grBCNgay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grBCQuy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
-            this.splitContainerControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grBCThang)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grBCNam)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
+            this.splitContainerControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // barManager1
@@ -174,89 +165,6 @@
             this.repositoryItemDateEdit2.Name = "repositoryItemDateEdit2";
             this.repositoryItemDateEdit2.NullText = "Đến ngày";
             // 
-            // splitContainerControl1
-            // 
-            this.splitContainerControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerControl1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainerControl1.Name = "splitContainerControl1";
-            this.splitContainerControl1.Panel1.Controls.Add(this.splitContainerControl2);
-            this.splitContainerControl1.Panel1.Text = "Panel1";
-            this.splitContainerControl1.Panel2.Controls.Add(this.splitContainerControl3);
-            this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(1132, 498);
-            this.splitContainerControl1.SplitterPosition = 627;
-            this.splitContainerControl1.TabIndex = 20;
-            this.splitContainerControl1.Text = "splitContainerControl1";
-            // 
-            // splitContainerControl2
-            // 
-            this.splitContainerControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.splitContainerControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerControl2.Horizontal = false;
-            this.splitContainerControl2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainerControl2.Name = "splitContainerControl2";
-            this.splitContainerControl2.Panel1.Controls.Add(this.grBCNgay);
-            this.splitContainerControl2.Panel1.Text = "Panel1";
-            this.splitContainerControl2.Panel2.Controls.Add(this.grBCQuy);
-            this.splitContainerControl2.Panel2.Text = "Panel2";
-            this.splitContainerControl2.Size = new System.Drawing.Size(627, 494);
-            this.splitContainerControl2.SplitterPosition = 309;
-            this.splitContainerControl2.TabIndex = 0;
-            this.splitContainerControl2.Text = "splitContainerControl2";
-            // 
-            // grBCNgay
-            // 
-            this.grBCNgay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grBCNgay.Location = new System.Drawing.Point(0, 0);
-            this.grBCNgay.Name = "grBCNgay";
-            this.grBCNgay.Size = new System.Drawing.Size(623, 309);
-            this.grBCNgay.TabIndex = 0;
-            this.grBCNgay.Text = "BÁO CÁO THEO NGÀY";
-            // 
-            // grBCQuy
-            // 
-            this.grBCQuy.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grBCQuy.Location = new System.Drawing.Point(0, 0);
-            this.grBCQuy.Name = "grBCQuy";
-            this.grBCQuy.Size = new System.Drawing.Size(623, 176);
-            this.grBCQuy.TabIndex = 0;
-            this.grBCQuy.Text = "BÁO CÁO THEO QUÝ";
-            // 
-            // splitContainerControl3
-            // 
-            this.splitContainerControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.splitContainerControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerControl3.Horizontal = false;
-            this.splitContainerControl3.Location = new System.Drawing.Point(0, 0);
-            this.splitContainerControl3.Name = "splitContainerControl3";
-            this.splitContainerControl3.Panel1.Controls.Add(this.grBCThang);
-            this.splitContainerControl3.Panel1.Text = "Panel1";
-            this.splitContainerControl3.Panel2.Controls.Add(this.grBCNam);
-            this.splitContainerControl3.Panel2.Text = "Panel2";
-            this.splitContainerControl3.Size = new System.Drawing.Size(496, 494);
-            this.splitContainerControl3.SplitterPosition = 309;
-            this.splitContainerControl3.TabIndex = 0;
-            this.splitContainerControl3.Text = "splitContainerControl3";
-            // 
-            // grBCThang
-            // 
-            this.grBCThang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grBCThang.Location = new System.Drawing.Point(0, 0);
-            this.grBCThang.Name = "grBCThang";
-            this.grBCThang.Size = new System.Drawing.Size(492, 309);
-            this.grBCThang.TabIndex = 0;
-            this.grBCThang.Text = "BÁO CÁO THEO THÁNG";
-            // 
-            // grBCNam
-            // 
-            this.grBCNam.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grBCNam.Location = new System.Drawing.Point(0, 0);
-            this.grBCNam.Name = "grBCNam";
-            this.grBCNam.Size = new System.Drawing.Size(492, 176);
-            this.grBCNam.TabIndex = 0;
-            this.grBCNam.Text = "BÁO CÁO THEO NĂM";
-            // 
             // barManager2
             // 
             this.barManager2.DockControls.Add(this.barDockControl1);
@@ -264,7 +172,6 @@
             this.barManager2.DockControls.Add(this.barDockControl3);
             this.barManager2.DockControls.Add(this.barDockControl4);
             this.barManager2.Form = this;
-            this.barManager2.MaxItemId = 0;
             // 
             // barDockControl1
             // 
@@ -305,7 +212,6 @@
             this.barManager3.DockControls.Add(this.barDockControl7);
             this.barManager3.DockControls.Add(this.barDockControl8);
             this.barManager3.Form = this;
-            this.barManager3.MaxItemId = 0;
             // 
             // barDockControl5
             // 
@@ -339,6 +245,42 @@
             this.barDockControl8.Manager = this.barManager3;
             this.barDockControl8.Size = new System.Drawing.Size(0, 498);
             // 
+            // splitContainerControl2
+            // 
+            this.splitContainerControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.splitContainerControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerControl2.Horizontal = false;
+            this.splitContainerControl2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerControl2.Name = "splitContainerControl2";
+            this.splitContainerControl2.Panel1.Controls.Add(this.grBCNgay);
+            this.splitContainerControl2.Panel1.Text = "Panel1";
+            this.splitContainerControl2.Size = new System.Drawing.Size(1118, 494);
+            this.splitContainerControl2.SplitterPosition = 480;
+            this.splitContainerControl2.TabIndex = 0;
+            this.splitContainerControl2.Text = "splitContainerControl2";
+            // 
+            // grBCNgay
+            // 
+            this.grBCNgay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grBCNgay.Location = new System.Drawing.Point(0, 0);
+            this.grBCNgay.Name = "grBCNgay";
+            this.grBCNgay.Size = new System.Drawing.Size(1114, 480);
+            this.grBCNgay.TabIndex = 0;
+            this.grBCNgay.Text = "BÁO CÁO DOANH THU";
+            // 
+            // splitContainerControl1
+            // 
+            this.splitContainerControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerControl1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerControl1.Name = "splitContainerControl1";
+            this.splitContainerControl1.Panel1.Controls.Add(this.splitContainerControl2);
+            this.splitContainerControl1.Panel1.Text = "Panel1";
+            this.splitContainerControl1.Size = new System.Drawing.Size(1132, 498);
+            this.splitContainerControl1.SplitterPosition = 1118;
+            this.splitContainerControl1.TabIndex = 20;
+            this.splitContainerControl1.Text = "splitContainerControl1";
+            // 
             // uscBaoCaoContent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,18 +306,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit2.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
-            this.splitContainerControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.barManager2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).EndInit();
             this.splitContainerControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grBCNgay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grBCQuy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).EndInit();
-            this.splitContainerControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grBCThang)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grBCNam)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
+            this.splitContainerControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -392,9 +329,6 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemDateEdit repositoryItemDateEdit1;
         private DevExpress.XtraBars.BarEditItem itemDenNgay;
         private DevExpress.XtraEditors.Repository.RepositoryItemDateEdit repositoryItemDateEdit2;
-        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
-        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl2;
-        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl3;
         private DevExpress.XtraBars.BarDockControl barDockControl3;
         private DevExpress.XtraBars.BarManager barManager2;
         private DevExpress.XtraBars.BarDockControl barDockControl1;
@@ -405,9 +339,8 @@
         private DevExpress.XtraBars.BarDockControl barDockControl5;
         private DevExpress.XtraBars.BarDockControl barDockControl6;
         private DevExpress.XtraBars.BarDockControl barDockControl8;
+        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
+        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl2;
         private DevExpress.XtraEditors.GroupControl grBCNgay;
-        private DevExpress.XtraEditors.GroupControl grBCQuy;
-        private DevExpress.XtraEditors.GroupControl grBCThang;
-        private DevExpress.XtraEditors.GroupControl grBCNam;
     }
 }

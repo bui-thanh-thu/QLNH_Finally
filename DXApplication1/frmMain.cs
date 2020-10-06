@@ -39,10 +39,8 @@ namespace DXApplication1
                     case 3:
                         navigationFrame.Pages[navigationFrame.SelectedPageIndex].Controls.Add(new uscBaoCaoContent() { Dock = DockStyle.Fill });
                         break;
-                    case 4:
-                        navigationFrame.Pages[navigationFrame.SelectedPageIndex].Controls.Add(new uscBaoCaoContentLoiNhuan() { Dock = DockStyle.Fill });
-                        break;
-                    case 5:
+                    
+                    case 4 :
                         navigationFrame.Pages[navigationFrame.SelectedPageIndex].Controls.Add(new uscMenu2() { Dock = DockStyle.Fill });
                         break;
                     
@@ -73,7 +71,7 @@ namespace DXApplication1
         {
             frmLogin frm = new frmLogin();
             frm.ShowDialog();
-            navBarControl.ActiveGroup = navBarControl.Groups[5];
+            navBarControl.ActiveGroup = navBarControl.Groups[4];
         }
 
         private void itemDangNhapLai_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -89,6 +87,11 @@ namespace DXApplication1
         }
 
         private void navigationFrame_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ribbonControl_Click(object sender, EventArgs e)
         {
 
         }

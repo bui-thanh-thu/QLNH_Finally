@@ -171,42 +171,6 @@
     <Compile Include="uscBan.Designer.cs">
       <DependentUpon>uscBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="uscBaoCaoChartLoiNhuanNam.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="uscBaoCaoChartLoiNhuanNam.Designer.cs">
-      <DependentUpon>uscBaoCaoChartLoiNhuanNam.cs</DependentUpon>
-    </Compile>
-    <Compile Include="uscBaoCaoChartNam.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="uscBaoCaoChartNam.Designer.cs">
-      <DependentUpon>uscBaoCaoChartNam.cs</DependentUpon>
-    </Compile>
-    <Compile Include="uscBaoCaoChartQuy.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="uscBaoCaoChartQuy.Designer.cs">
-      <DependentUpon>uscBaoCaoChartQuy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="uscBaoCaoChartLoiNhuanThang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="uscBaoCaoChartLoiNhuanThang.Designer.cs">
-      <DependentUpon>uscBaoCaoChartLoiNhuanThang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="uscBaoCaoChartThang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="uscBaoCaoChartThang.Designer.cs">
-      <DependentUpon>uscBaoCaoChartThang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="uscBaoCaoContentLoiNhuan.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="uscBaoCaoContentLoiNhuan.Designer.cs">
-      <DependentUpon>uscBaoCaoContentLoiNhuan.cs</DependentUpon>
-    </Compile>
     <Compile Include="uscBaoCaoContent.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -224,12 +188,6 @@
     </Compile>
     <Compile Include="uscBaoCao.Designer.cs">
       <DependentUpon>uscBaoCao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="uscDSCho.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="uscDSCho.Designer.cs">
-      <DependentUpon>uscDSCho.cs</DependentUpon>
     </Compile>
     <Compile Include="uscDSNhanVien.cs">
       <SubType>UserControl</SubType>
@@ -308,24 +266,6 @@
     <EmbeddedResource Include="uscBan.resx">
       <DependentUpon>uscBan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="uscBaoCaoChartLoiNhuanNam.resx">
-      <DependentUpon>uscBaoCaoChartLoiNhuanNam.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="uscBaoCaoChartNam.resx">
-      <DependentUpon>uscBaoCaoChartNam.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="uscBaoCaoChartQuy.resx">
-      <DependentUpon>uscBaoCaoChartQuy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="uscBaoCaoChartLoiNhuanThang.resx">
-      <DependentUpon>uscBaoCaoChartLoiNhuanThang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="uscBaoCaoChartThang.resx">
-      <DependentUpon>uscBaoCaoChartThang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="uscBaoCaoContentLoiNhuan.resx">
-      <DependentUpon>uscBaoCaoContentLoiNhuan.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="uscBaoCaoContent.resx">
       <DependentUpon>uscBaoCaoContent.cs</DependentUpon>
     </EmbeddedResource>
@@ -334,9 +274,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uscBaoCao.resx">
       <DependentUpon>uscBaoCao.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="uscDSCho.resx">
-      <DependentUpon>uscDSCho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uscDSNhanVien.resx">
       <DependentUpon>uscDSNhanVien.cs</DependentUpon>

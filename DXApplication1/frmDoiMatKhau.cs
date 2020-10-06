@@ -14,6 +14,12 @@ namespace DXApplication1
 {
     public partial class frmDoiMatKhau : DevExpress.XtraBars.TabForm
     {
+        public void funData(TextBox txtForm1)
+        {
+            txtTaiKhoan.Text = txtForm1.Text;
+
+        }
+
         public frmDoiMatKhau()
         {
             InitializeComponent();

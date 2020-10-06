@@ -79,7 +79,17 @@ namespace DXApplication1
                         lsvCTHD.Items[index].SubItems.Add(dr["Thành tiền"].ToString());
                         index++;
                     }
-                  //  TongTien();
+                    //cmd.Dispose();
+                    //SqlCommand command = new SqlCommand("CTHD_Select4", conn);
+                    //command.CommandType = CommandType.StoredProcedure;
+                    //command.Parameters.Add("HDID", SqlDbType.NVarChar, 50).Value = p_HDID;
+                    //SqlDataAdapter adapter = new SqlDataAdapter();
+                    //adapter.SelectCommand = command;
+                    //DataTable tb = new DataTable();
+                    //adapter.Fill(tb);
+                    //int sum =Convert.ToInt32 (tb.Compute("sum(Thành tiền)",string.Empty));
+                    //lbTongtien.Text = sum.ToString();
+
 
                 }
 
@@ -91,16 +101,6 @@ namespace DXApplication1
         {
             loadListView();
         }
-        //public void TongTien()
-        //{
-        //    float tong = 0;
-        //    int n = lsvCTHD.Items.Count - 1;
-        //    for (int i = 0; i< n; i++)
-        //    {
-        //        string p = lsvCTHD.Items[i].SubItems["Thành Tiền"].ToString();
-        //        tong += float.Parse(p);
-        //    }
-        //    lbTongtien.Text = tong.ToString();
-        //}
+        
     }
 }
